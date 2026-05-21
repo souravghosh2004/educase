@@ -10,12 +10,12 @@ export default function Button ({ children, variant = "primary", onClick, type =
     };
 
     return (
-        <Button
+        <button
             type={type}
             onClick={onClick}
             className={`${baseStyle} ${variants[variant]} ${className}`}
         >
             {children}
-        </Button>
+        </button>
     )
 }

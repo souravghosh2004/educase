@@ -2,10 +2,10 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 import  Input  from "../components/Input";
-
+import Button from "../components/Button";
 export default function Signup  (){
     const navigate = useNavigate();
-    const login = useAuth();
+    const {login} = useAuth();
 
     const [formData, setFormData] = useState({
         name: "",
@@ -22,7 +22,7 @@ export default function Signup  (){
         navigate("/profile");
     }
 
-    const handleOnChange = (e) => {
+    const handleChange = (e) => {
         setFormData({...formData, [e.target.name]: e.target.value});
     }
 
@@ -34,7 +34,7 @@ export default function Signup  (){
 
             <form onSubmit={handleSubmit} className="flex flex-col flex-1">
                 <div className="flex-1">
-                    <Input lable="Full Name" name="name" value={formData.name} onChange={handleOnChange} reqired />
+                    <Input label="Full Name" name="name" value={formData.name} onChange={handleChange} required />
                     <Input label="Phone number" name="phone" value={formData.phone} onChange={handleChange} required />
                     <Input label="Email address" type="email" name="email" value={formData.email} onChange={handleChange} required />
                     <Input label="Password" type="password" name="password" value={formData.password} onChange={handleChange} required />
