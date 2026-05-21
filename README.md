@@ -1,16 +1,39 @@
-# React + Vite
+# PopX - React Frontend Assignment 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Vite](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
 
-Currently, two official plugins are available:
+A pixel-perfect, highly responsive React application built as a qualifier task for a ReactJS Development Internship. This project demonstrates modern frontend architecture, reusable component design, and seamless client-side routing.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### 🔗 [Click here to view the Live App](https://educase-sepia.vercel.app/)
 
-## React Compiler
+## ✨ Key Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **Pixel-Perfect UI:** Translates the provided Adobe XD design into a clean, SaaS-level interface.
+* **Responsive Architecture:** Features a mobile-first layout that elegantly centers inside a simulated device viewport on desktop screens to maintain aspect ratio and usability.
+* **Global State Management:** Utilizes React Context API for mock backend authentication, allowing user registration data to seamlessly flow from the Signup screen to the Profile dashboard.
+* **Modular Components:** Employs DRY principles with highly reusable custom `Input` and `Button` components.
+* **Client-Side Routing:** Fast, un-refreshing navigation managed by `react-router-dom`.
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* **Framework:** React 18 (via Vite)
+* **Styling:** Tailwind CSS
+* **Routing:** React Router v6
+* **State Management:** React Context API
+
+## 🚀 How to Run Locally
+
+1. **Clone the repository:**
+   `git clone https://github.com/souravghosh2004/educase`
+
+2. **Install dependencies:**
+   `npm install`
+
+3. **Start the development server:**
+   `npm run dev`
+
+---
+*Developed by **Sourav Ghosh**.*
